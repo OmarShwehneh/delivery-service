@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferdienst</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/templates.js"></script>
+    <!-- Import Google Fonts START -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
+    <!-- Import Google Fonts END -->
+</head>
+
+<body onload="render()">
+    <div id="pop-up-container">
+        <!-- Pop-Ups are rendered here -->
+    </div>
+    <header id="header">
+        <div class="header-banner border-spacing-header">
+            <button class="header-logo-container btns">
+                <img src="./img/icons/keyboard_arrow_left_white.svg" alt="keyboard_arrow_left" class="header-logo-icon hide-mobile">
+                <b class="header-logo-text">Lieferdienst.at</b>
+            </button>
+            <button class="header-text btns">Wo möchtest du Essen bestellen?</button>
+            <div class="header-menu-container">
+                <button class="language-btn btns hide-mobile" onclick="showLanguageAndCountrySelection()">
+                    <img src="./img/icons/countries/austria.svg" alt="Österreich" class="language-img">
+                </button>
+                <button class="login-menu-btn btns" onclick="showLoginSection()">
+                    <img src="./img/icons/menu.svg" alt="Menu Icon" class="menu-icon">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="restaurant-section">
+            <div id="restaurant-banner" class="restaurant-banner">
+                <div class="restaurant-logo">
+                    <img src="./img/restaurant_logo.svg" alt="Japanisches Restaurant Logo">
+                </div>
+            </div>
+            <div class="restaurant-title-banner border-spacing-restaurant-section">
+                <div class="restaurant-title-container">
+                    <h1 class="restaurant-title-text">Japanisches Restaurant</h1>
+                    <div class="restaurant-rating">
+                        <img src="./img/icons/star_full.svg" alt="Stern" class="star-icon star-1">
+                        <img src="./img/icons/star_full.svg" alt="Stern" class="star-icon star-2">
+                        <img src="./img/icons/star_full.svg" alt="Stern" class="star-icon star-3">
+                        <img src="./img/icons/star_full.svg" alt="Stern" class="star-icon star-4">
+                        <img src="./img/icons/star_half_full.svg" alt="Stern" class="star-icon star-5">
+                        <span class="rating-text">(2,4k Bewertungen)</span>
+                    </div>
+                </div>
+                <div class="restaurant-title-btns">
+                    <button class="title-btn info-btn btns" onclick="showRestaurantInfo()">
+                        <img src="./img/icons/info.svg" alt="Information">
+                    </button>
+                    <button class="title-btn like-btn btns" onclick="toggleLike()">
+                        <img id="like-img" src="./img/icons/favorite_heart_unliked.svg" alt="Favorit">
+                    </button>
+                </div>
+            </div>
+            <div class="menu-banner border-spacing-restaurant-section">
+                <img src="./img/icons/search.svg" alt="Suche">
+                <img src="./img/icons/keyboard_arrow_left.svg" alt="Preil Links" class="keyboard-icon" onclick="scrollToRight()">
+                <div id="menu-categories" class="menu-categories">
+                    <!-- Menu categories are rendered here -->
+                </div>
+                <img src="./img/icons/keyboard_arrow_right.svg" alt="Pfeil Rechts" class="keyboard-icon" onclick="scrollToLeft()">
+            </div>
+            <div class="menu-items-header border-spacing-restaurant-section">
+                <h3>Beliebte Gerichte</h3>
+            </div>
+            <div id="menu-items-container" class="menu-items-container">
+                <!-- Menu items are rendered here -->
+            </div>
+            <div class="impressum-container border-spacing-restaurant-section hide-mobile">
+                <h3>Impressum</h3>
+                <span class="impressum-text">Japanisches Restaurant</span><br>
+                <span class="impressum-text">Japanisches Restaurant GesbR</span><br>
+                <span class="impressum-text">Straße Hausnummer</span><br>
+                <span class="impressum-text">Postleitzahl Ort</span><br>
+                <span class="impressum-text">Land</span><br>
+                <br>
+                <span class="impressum-text">Gesetzlicher Vertreter: Vorname Nachname</span><br>
+                <br>
+                <a href="mailto: japanisches-restaurant@domain.at" class="impressum-text">japanisches-restaurant@domain.at</a><br>
+                <br>
+                <span class="impressum-text">Unternehmensregister: Ort</span><br>
+                <span class="impressum-text">Unternehmensregister-Nr: 123456789</span><br>
+            </div>
+            <div class="sticky-basket-btn-container">
+                <button id="mobile-basket-btn" class="mobile-basket-btn btns" onclick="showMobileBasket()"></button>
+            </div>
+            <div id="sticky-up-btn-container" class="sticky-up-btn-container d-none">
+                <button class="sticky-up-btn" onclick="scrollToTop()"><img src="./img/icons/keyboard_arrow_up.svg" alt="Pfeil nach Oben"></button>
+            </div>
+        </div>
+        <aside>
+            <div id="basket-section" class="basket-section hide-mobile">
+                <div class="sidebar-container">
+                    <div id="mobile-basket-header" class="mobile-basket-header d-none">
+                        <span class="basket-title">Warenkorb</span>
+                        <button class="close-btn" onclick="closeMobileBasket()">
+                            <img src="./img/icons/close_black.svg" alt="Schließen">
+                        </button>
+                    </div>
+                    <div id="basket-header" class="basket-header">
+                        <span class="basket-title">Warenkorb</span>
+                    </div>
+                    <div id="basket-container" class="basket-container">
+                        <!-- Basket items are rendered here -->
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer id="footer" class="border-spacing-footer">
+        <div class="footer-links">
+            <a href="#">Ein Restaurant empfehlen</a><a href="#">Ein Restaurant anmelden </a><a href="#">Jobs</a><a href="#">AGB</a><a href="#">Datenschutzerklärung</a>
+            <a href="#">Impressum</a><a href="#">Verwendung von Cookies</a><a href="#">Bug Bounty</a><a href="#">Ethik-Hotline</a>
+        </div>
+        <span class="copyright-text">2022 Sample Website / Created by Lukas Volgger</span>
+    </footer>
+</body>
+
+</html>
