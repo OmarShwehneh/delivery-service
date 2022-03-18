@@ -5,9 +5,37 @@ This is a learning project from the Frontend Web Development course of the <a hr
 <b>IMPORTANT:</b> Please note that learning projects focus on the given tasks. It is therefore possible that some functions do not work or are not scripted.
 <h3>Table of Contents</h3>
 
+- <a href="#features">Features</a>
 - <a href="#preview">Preview</a>
 - <a href="#installation">Installation</a>
 - <a href="#license">License</a>
+
+<h2 id="features">Features</h2>
+Here is an overview of the most important functions of the project. Click on the summary to expand.<br>
+
+<br>
+<details><summary><b>Available Languages</b></summary>
+  
+- [X] German
+  
+</details>
+
+<details><summary><b>Functionality</b></summary>
+  
+- [X] Login menu is displayed
+- [X] Country selection is displayed
+- [X] Restaurant information can be displayed
+- [X] The favorites button can be toggled
+- [X] Menu categories can be selected and scrolled
+- [X] Product information is displayed depending on the dish
+- [X] Add/remove dishes to cart or edit them
+- [X] Possibility to add comments to the dish in the shopping cart
+- [X] Dishes in cart will be stacked when added again
+- [X] The minimum order value is variable and the order can only be executed once it has been reached
+- [X] An order confirmation is displayed when you click on >Bezahlen<
+- [X] Responsive Webdesign
+  
+</details>
 
 <h2 id="preview">Preview</h2>
 
