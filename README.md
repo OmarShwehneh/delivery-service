@@ -16,47 +16,59 @@ Here is an overview of the most important functions of the project. Click on the
 <br>
 <details><summary><b>Available Languages</b></summary>
   
-- [X] German
+:heavy_check_mark: German <br>
   
 </details>
 
 <details><summary><b>Functionality</b></summary>
   
-- [X] Login menu is displayed
-- [X] Country selection is displayed
-- [X] Restaurant information can be displayed
-- [X] The favorites button can be toggled
-- [X] Menu categories can be selected and scrolled
-- [X] Product information is displayed depending on the dish
-- [X] Add/remove dishes to cart or edit them
-- [X] Possibility to add comments to the dish in the shopping cart
-- [X] Dishes in cart will be stacked when added again
-- [X] The minimum order value is variable and the order can only be executed once it has been reached
-- [X] An order confirmation is displayed when you click on >Bezahlen<
-- [X] Responsive Webdesign
+:heavy_check_mark: Login menu is displayed <br>
+:heavy_check_mark: Country selection is displayed <br>
+:heavy_check_mark: Restaurant information can be displayed <br>
+:heavy_check_mark: The favorites button can be toggled <br>
+:heavy_check_mark: Menu categories can be selected and scrolled <br>
+:heavy_check_mark: Product information is displayed depending on the dish <br>
+:heavy_check_mark: Add/remove dishes to cart or edit them <br>
+:heavy_check_mark: Possibility to add comments to the dish in the shopping cart <br>
+:heavy_check_mark: Dishes in cart will be stacked when added again <br>
+:heavy_check_mark: The minimum order value is variable and the order can only be executed once it has been reached <br>
+:heavy_check_mark: An order confirmation is displayed when you click on >Bezahlen< <br>
+:heavy_check_mark: Responsive Webdesign <br>
   
 </details>
 
 <h2 id="preview">Preview</h2>
 
 ![This is an image](/img/preview/basket_preview.png)
+  
+  ---
+  
 ![This is an image](/img/preview/info_preview.png)
 
 <h2 id="installation">Installation</h2>
 Follow these steps to install/test the project.
 
 <h3 id="requirements">1. Requirements</h3>
-All you need is a web browser like <a href="https://www.google.com/chrome/">Google Chrome</a>, <a href="https://www.mozilla.org/ en-US/firefox/new/">Firefox</a> or <a href="https://www.microsoft.com/en-US/edge">Microsoft Edge</a>.
+All you need is a web browser like one of the following:
+<br>
+<br>
 
-<h3>2. Download the Project</h3>
+<a href="https://www.google.com/chrome/">![Google Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white)</a>
+<a href="https://www.mozilla.org/en-US/firefox/new/">![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)</a>
+<a href="https://www.microsoft.com/en-US/edge">![Edge](https://img.shields.io/badge/Edge-0078D7?style=for-the-badge&logo=Microsoft-edge&logoColor=white)</a>
+
+<h3>2. Download the Source</h3>
 Download the source code or clone the repository on your local computer by clicking the <b>Code</b> button.
+<br>
+<br>
 
-![image](https://user-images.githubusercontent.com/55922592/157395376-12b1167d-340d-419d-b490-f8f23679af62.png)
-
+![readme_installation_1](https://user-images.githubusercontent.com/55922592/161735913-9de1b046-0a0c-448b-80fa-145ee904d8ab.png)
 
 <h3>3. Start the Project</h3>
 Navigate to the location on your computer where you downloaded/cloned the code. In the project directory, open the <b>index.html</b> file with a web browser.
-
-![readme_installation](https://user-images.githubusercontent.com/55922592/157415952-9cfe1da5-0872-4bf1-ad45-1bd942b9f7a9.PNG)
+<br>
+<br>
+  
+![readme_installation_2](https://user-images.githubusercontent.com/55922592/161733187-a9ca556c-d21e-4f74-b96d-015082da85d5.png)
 
 <h2 id="license">License</h2>
