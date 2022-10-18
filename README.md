@@ -39,11 +39,11 @@ Here is an overview of the most important functions of the project. Click on the
 
 <h2 id="preview">Preview</h2>
 
-![This is an image](/img/preview/basket_preview.png)
+![This is an image](./assets/img/preview/basket_preview.png)
   
   ---
   
-![This is an image](/img/preview/info_preview.png)
+![This is an image](./assets/img/preview/info_preview.png)
 
 <h2 id="installation">Installation</h2>
 Follow these steps to install/test the project.
