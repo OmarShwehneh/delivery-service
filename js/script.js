@@ -11,14 +11,14 @@ function scrollToLeft() {
 function disableMinusBtn(item) {
     document.getElementById(`minus-btn-${item}`).style = 'background-color: #ebebeb;';
     document.getElementById(`minus-btn-${item}`).classList.add('no-hover');
-    document.getElementById(`minus-btn-img-${item}`).src = './img/icons/minus_disabled.svg';
+    document.getElementById(`minus-btn-img-${item}`).src = './assets/img/icons/minus_disabled.svg';
 
 }
 
 function enableMinusBtn(item) {
     document.getElementById(`minus-btn-${item}`).style = 'background-color: white';
     document.getElementById(`minus-btn-${item}`).classList.remove('no-hover');
-    document.getElementById(`minus-btn-img-${item}`).src = './img/icons/minus.svg';
+    document.getElementById(`minus-btn-img-${item}`).src = './assets/img/icons/minus.svg';
 }
 
 function enableCheckoutBtn() {
@@ -35,9 +35,9 @@ function toggleLike() {
     liked = !liked;
 
     if (liked) {
-        document.getElementById('like-img').src = './img/icons/favorite_heart_liked.svg';
+        document.getElementById('like-img').src = './assets/img/icons/favorite_heart_liked.svg';
     } else {
-        document.getElementById('like-img').src = './img/icons/favorite_heart_unliked.svg';
+        document.getElementById('like-img').src = './assets/img/icons/favorite_heart_unliked.svg';
     }
 }
 

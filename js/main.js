@@ -176,7 +176,7 @@ function openMenuItem(item) {
 
     if (menuItemIsOpen[item] === true) {
         document.getElementById(`menu-item-basket-section-${item}`).classList.remove('d-none');
-        document.getElementById(`menu-item-icon-${item}`).src = './img/icons/close.svg';
+        document.getElementById(`menu-item-icon-${item}`).src = './assets/img/icons/close.svg';
 
         // Close all other menu items when selected menu item is open
         for (let i = 0; i < menuItems.length; i++) {
@@ -195,7 +195,7 @@ function openMenuItem(item) {
 
 function closeMenuItem(item) {
     document.getElementById(`menu-item-basket-section-${item}`).classList.add('d-none');
-    document.getElementById(`menu-item-icon-${item}`).src = './img/icons/plus.svg';
+    document.getElementById(`menu-item-icon-${item}`).src = './assets/img/icons/plus.svg';
 
     itemCounter[item] = 1;
     document.getElementById(`menu-item-amount-${item}`).innerHTML = itemCounter[item];

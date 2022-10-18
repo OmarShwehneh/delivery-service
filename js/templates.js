@@ -6,63 +6,63 @@ function generateLanguageAndCountrySectionHTML() {
                 <h3 class="languague-country-heading">Land</h3>
                 <div class="countries">
                     <div class="country">
-                        <img src="./img/icons/countries/austria.svg" alt="Österreich"> 
+                        <img src="./assets/img/icons/countries/austria.svg" alt="Österreich"> 
                         <span class="language-country-text"><b>Österreich</b></span>
                     </div>
                     <div class="country">
-                        <img src="./img/icons/countries/australia.svg" alt="Australien"> 
+                        <img src="./assets/img/icons/countries/australia.svg" alt="Australien"> 
                         <span class="language-country-text">Australien</span>
                     </div>
                     <div class="country">
-                        <img src="./img/icons/countries/belgium.svg" alt="Belgien"> 
+                        <img src="./assets/img/icons/countries/belgium.svg" alt="Belgien"> 
                         <span class="language-country-text">Belgien</span>
                     </div>
                     <div class="country">
-                        <img src="./img/icons/countries/bulgaria.svg" alt="Bulgarien"> 
+                        <img src="./assets/img/icons/countries/bulgaria.svg" alt="Bulgarien"> 
                         <span class="language-country-text">Bulgarien</span>
                     </div>
                     <div class="country">
-                        <img src="./img/icons/countries/denmark.svg" alt="Dänemark"> 
+                        <img src="./assets/img/icons/countries/denmark.svg" alt="Dänemark"> 
                         <span class="language-country-text">Dänemark</span>
                     </div>
                     <div class="country">
-                        <img src="./img/icons/countries/germany.svg" alt="Deutschland"> 
+                        <img src="./assets/img/icons/countries/germany.svg" alt="Deutschland"> 
                         <span class="language-country-text">Deutschland</span>
                     </div>
                     <div class="country">
-                        <img src="./img/icons/countries/france.svg" alt="Frankreich"> 
+                        <img src="./assets/img/icons/countries/france.svg" alt="Frankreich"> 
                         <span class="language-country-text">Frankreich</span>
                     </div>
                     <div class="country">
-                        <img src="./img/icons/countries/israel.svg" alt="Israel"> 
+                        <img src="./assets/img/icons/countries/israel.svg" alt="Israel"> 
                         <span class="language-country-text">Israel</span>
                     </div>
                     <div class="country">
-                        <img src="./img/icons/countries/canada.svg" alt="Kanada"> 
+                        <img src="./assets/img/icons/countries/canada.svg" alt="Kanada"> 
                         <span class="language-country-text">Kanada</span>
                     </div>
                     <div class="country">
-                        <img src="./img/icons/countries/new-zealand.svg" alt="Neuseeland"> 
+                        <img src="./assets/img/icons/countries/new-zealand.svg" alt="Neuseeland"> 
                         <span class="language-country-text">Neuseeland</span>
                     </div>
                     <div class="country">
-                        <img src="./img/icons/countries/norway.svg" alt="Norwegen"> 
+                        <img src="./assets/img/icons/countries/norway.svg" alt="Norwegen"> 
                         <span class="language-country-text">Norwegen</span>
                     </div>
                     <div class="country">
-                        <img src="./img/icons/countries/portugal.svg" alt="Portugal"> 
+                        <img src="./assets/img/icons/countries/portugal.svg" alt="Portugal"> 
                         <span class="language-country-text">Portugal</span>
                     </div>
                     <div class="country">
-                        <img src="./img/icons/countries/romania.svg" alt="Rumänien"> 
+                        <img src="./assets/img/icons/countries/romania.svg" alt="Rumänien"> 
                         <span class="language-country-text">Rumänien</span>
                     </div>
                     <div class="country">
-                        <img src="./img/icons/countries/spain.svg" alt="Spanien"> 
+                        <img src="./assets/img/icons/countries/spain.svg" alt="Spanien"> 
                         <span class="language-country-text">Spanien</span>
                     </div>
                     <div class="country">
-                        <img src="./img/icons/countries/united-kingdom.svg" alt="Vereinigtes Königreich"> 
+                        <img src="./assets/img/icons/countries/united-kingdom.svg" alt="Vereinigtes Königreich"> 
                         <span class="language-country-text">Vereinigtes Königreich</span>
                     </div>
                 </div>
@@ -95,7 +95,7 @@ function generateLoginSectionHTML() {
             <div class="login-section-header">
                 <div class="login-section-header-subcontainer">
                     <div class="login-img-container">
-                        <img src="./img/icons/smile.svg" alt="Smile">
+                        <img src="./assets/img/icons/smile.svg" alt="Smile">
                     </div>
                     <div>
                         <h3 class="login-section-heading">Mein Account</h3>
@@ -103,7 +103,7 @@ function generateLoginSectionHTML() {
                     </div>
                 </div>
                 <button class="close-btn" onclick="closePopUp()">
-                    <img src="./img/icons/close_white.svg" alt="Schließen">
+                    <img src="./assets/img/icons/close_white.svg" alt="Schließen">
                 </button>
             </div>
             <div>
@@ -127,7 +127,7 @@ function generateMenuItemsHTML(i) {
             <a class="product-information" onclick="showAllergenic(${i})">Produktinfo</a>
         </div>
         <div class="add-to-basket-container">
-            <img src="./img/icons/plus.svg" alt="Plus" id="menu-item-icon-${i}" class="menu-item-icon">
+            <img src="./assets/img/icons/plus.svg" alt="Plus" id="menu-item-icon-${i}" class="menu-item-icon">
         </div>
         <div class="menu-item-body menu-items-border-spacing">
             <span class="menu-item-description">${menuItems[i].description}</span>
@@ -135,9 +135,9 @@ function generateMenuItemsHTML(i) {
         </div>
         <div id="menu-item-basket-section-${i}" class="d-none menu-item-basket-section menu-items-border-spacing" onclick="event.stopPropagation()">
             <div class="menu-item-add-to-basket-counter">
-                <button id="minus-btn-${i}" class="minus-btn btns" onclick="itemCounterMinus(${i})"><img src="./img/icons/minus.svg" alt="Minus" id="minus-btn-img-${i}" class="menu-item-icon-img"></button>
+                <button id="minus-btn-${i}" class="minus-btn btns" onclick="itemCounterMinus(${i})"><img src="./assets/img/icons/minus.svg" alt="Minus" id="minus-btn-img-${i}" class="menu-item-icon-img"></button>
                 <div id="menu-item-amount-${i}" class="menu-item-amount">${itemCounter[i] = 1}</div>
-                <button class="plus-btn btns" onclick="itemCounterPlus(${i})"><img src="./img/icons/plus.svg" alt="Plus" class="menu-item-icon-img"></button>
+                <button class="plus-btn btns" onclick="itemCounterPlus(${i})"><img src="./assets/img/icons/plus.svg" alt="Plus" class="menu-item-icon-img"></button>
             </div>
             <button id="add-to-basket-btn-${i}" class="add-to-basket-btn btns" onclick="addToBasket(${i})"></button>
         </div>
@@ -149,7 +149,7 @@ function generateEmptyBasketHTML() {
     let basket = document.getElementById('basket-container');
     basket.innerHTML += `
         <div class="empty-basket-container">
-            <img src="./img/icons/shopping_bag.svg" alt="Warenkorb" class="shopping-bag-icon">
+            <img src="./assets/img/icons/shopping_bag.svg" alt="Warenkorb" class="shopping-bag-icon">
             <h3>Fülle deinen Warenkorb</h3>
             <span class="empty-basket-text">Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle dein Essen.</span>
         </div>
@@ -170,8 +170,8 @@ function generateBasketItemsHTML(i) {
             <div class="basket-item-body-subcontainer">
                 <div id="annotation-btn-${i}"></div>
                 <div class="basket-item-counter-btns">
-                    <button class="minus-btn btns" onclick="decreaseItemInBasket(${i})"><img src="./img/icons/minus.svg" alt="Minus" class="menu-item-icon-img"></button>
-                    <button class="plus-btn btns" onclick="increaseItemInBasket(${i})"><img src="./img/icons/plus.svg" alt="Plus" class="menu-item-icon-img"></button>
+                    <button class="minus-btn btns" onclick="decreaseItemInBasket(${i})"><img src="./assets/img/icons/minus.svg" alt="Minus" class="menu-item-icon-img"></button>
+                    <button class="plus-btn btns" onclick="increaseItemInBasket(${i})"><img src="./assets/img/icons/plus.svg" alt="Plus" class="menu-item-icon-img"></button>
                 </div>
             </div>
         </div>
@@ -265,7 +265,7 @@ function generateAllergenicHTML() {
             <div class="pop-up-header">
                 <h3>Weitere Produktinformationen</h3>
                 <button class="close-btn" onclick="closePopUp()">
-                    <img src="./img/icons/close_black.svg" alt="Schließen">
+                    <img src="./assets/img/icons/close_black.svg" alt="Schließen">
                 </button>
             </div>
             <div class="allergenic-body">
@@ -286,7 +286,7 @@ function generateRestaurantInfoHTML() {
             <div class="pop-up-header">
                 <h3>Über das Restaurant</h3>
                 <button class="close-btn" onclick="closePopUp()">
-                    <img src="./img/icons/close_black.svg" alt="Schließen">
+                    <img src="./assets/img/icons/close_black.svg" alt="Schließen">
                 </button>
             </div>
             <div class="restaurant-info-body">
@@ -294,7 +294,7 @@ function generateRestaurantInfoHTML() {
                     class="google-maps">
             </iframe>
                 <div class="restaurant-info-heading">
-                    <img src="./img/icons/time_left.svg" alt="Lieferzeiten">
+                    <img src="./assets/img/icons/time_left.svg" alt="Lieferzeiten">
                     <h3>Lieferzeiten</h3>
                 </div>
                 <div class="restaurant-info-content">
@@ -330,7 +330,7 @@ function generateRestaurantInfoHTML() {
                     </table>
                 </div>
                 <div class="restaurant-info-heading">
-                    <img src="./img/icons/delivery_motorbike.svg" alt="Lieferung Motorrad">
+                    <img src="./assets/img/icons/delivery_motorbike.svg" alt="Lieferung Motorrad">
                     <h3>Lieferkosten</h3>
                 </div>
                 <div class="restaurant-info-content">
@@ -346,17 +346,17 @@ function generateRestaurantInfoHTML() {
                     </table>
                 </div>
                 <div class="restaurant-info-heading">
-                    <img src="./img/icons/payment.svg" alt="Bezahlung">
+                    <img src="./assets/img/icons/payment.svg" alt="Bezahlung">
                     <h3>Bezahlmethoden</h3>
                 </div>
                 <div class="restaurant-info-content">
-                    <div class="payment-method"><img src="./img/icons/paypal.svg" alt="PayPal" title="PayPal"></div>
-                    <div class="payment-method"><img src="./img/icons/credit_card.svg" alt="Credit Card" title="Kreditkarte"></div>
-                    <div class="payment-method"><img src="./img/icons/money.svg" alt="Bargeld" title="Bargeld"></div>
-                    <div class="payment-method"><img src="./img/icons/coupon.svg" alt="Gutschein" title="Gutschein"></div>
+                    <div class="payment-method"><img src="./assets/img/icons/paypal.svg" alt="PayPal" title="PayPal"></div>
+                    <div class="payment-method"><img src="./assets/img/icons/credit_card.svg" alt="Credit Card" title="Kreditkarte"></div>
+                    <div class="payment-method"><img src="./assets/img/icons/money.svg" alt="Bargeld" title="Bargeld"></div>
+                    <div class="payment-method"><img src="./assets/img/icons/coupon.svg" alt="Gutschein" title="Gutschein"></div>
                 </div>
                 <div class="restaurant-info-heading">
-                    <img src="./img/icons/building.svg" alt="Impressum">
+                    <img src="./assets/img/icons/building.svg" alt="Impressum">
                     <h3>Impressum</h3>
                 </div>
                 <div class="restaurant-info-content bottom-spacing">
@@ -375,12 +375,12 @@ function generateOrderSuccessfulHTML() {
             <div class="pop-up-header">
                 <h3>Vielen Dank für deine Bestellung!</h3>
                 <button class="close-btn" onclick="closePopUp()">
-                    <img src="./img/icons/close_black.svg" alt="Schließen">
+                    <img src="./assets/img/icons/close_black.svg" alt="Schließen">
                 </button>
             </div>
             <div class="order-successful-body">
                 <h3>Deine Bestellung wird in ungefähr 60 Minuten bei dir zu Hause ankommen!</h3>
-                <img src="./img/icons/smile.svg" alt="Smile">
+                <img src="./assets/img/icons/smile.svg" alt="Smile">
             </div>
         </div>
     </div>

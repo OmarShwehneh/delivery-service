@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lieferdienst</title>
     <link rel="stylesheet" href="style.css">
-    <script src="./scripts/main.js"></script>
-    <script src="./scripts/script.js"></script>
-    <script src="./scripts/templates.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/templates.js"></script>
 </head>
 
 <body onload="render()">
@@ -19,16 +19,16 @@
     <header id="header">
         <div class="header-banner border-spacing-header">
             <button class="header-logo-container btns">
-                <img src="./img/icons/keyboard_arrow_left_white.svg" alt="keyboard_arrow_left" class="header-logo-icon hide-mobile">
+                <img src="./assets/img/icons/keyboard_arrow_left_white.svg" alt="keyboard_arrow_left" class="header-logo-icon hide-mobile">
                 <b class="header-logo-text">Lieferdienst.at</b>
             </button>
             <button class="header-text btns">Wo möchtest du Essen bestellen?</button>
             <div class="header-menu-container">
                 <button class="language-btn btns hide-mobile" onclick="showLanguageAndCountrySelection()">
-                    <img src="./img/icons/countries/austria.svg" alt="Österreich" class="language-img">
+                    <img src="./assets/img/icons/countries/austria.svg" alt="Österreich" class="language-img">
                 </button>
                 <button class="login-menu-btn btns" onclick="showLoginSection()">
-                    <img src="./img/icons/menu.svg" alt="Menu Icon" class="menu-icon">
+                    <img src="./assets/img/icons/menu.svg" alt="Menu Icon" class="menu-icon">
                 </button>
             </div>
         </div>
@@ -38,37 +38,37 @@
         <div class="restaurant-section">
             <div id="restaurant-banner" class="restaurant-banner">
                 <div class="restaurant-logo">
-                    <img src="./img/restaurant_logo.svg" alt="Japanisches Restaurant Logo">
+                    <img src="./assets/img/restaurant_logo.svg" alt="Japanisches Restaurant Logo">
                 </div>
             </div>
             <div class="restaurant-title-banner border-spacing-restaurant-section">
                 <div class="restaurant-title-container">
                     <h1 class="restaurant-title-text">Japanisches Restaurant</h1>
                     <div class="restaurant-rating">
-                        <img src="./img/icons/star_full.svg" alt="Stern" class="star-icon star-1">
-                        <img src="./img/icons/star_full.svg" alt="Stern" class="star-icon star-2">
-                        <img src="./img/icons/star_full.svg" alt="Stern" class="star-icon star-3">
-                        <img src="./img/icons/star_full.svg" alt="Stern" class="star-icon star-4">
-                        <img src="./img/icons/star_half_full.svg" alt="Stern" class="star-icon star-5">
+                        <img src="./assets/img/icons/star_full.svg" alt="Stern" class="star-icon star-1">
+                        <img src="./assets/img/icons/star_full.svg" alt="Stern" class="star-icon star-2">
+                        <img src="./assets/img/icons/star_full.svg" alt="Stern" class="star-icon star-3">
+                        <img src="./assets/img/icons/star_full.svg" alt="Stern" class="star-icon star-4">
+                        <img src="./assets/img/icons/star_half_full.svg" alt="Stern" class="star-icon star-5">
                         <span class="rating-text">(2,4k Bewertungen)</span>
                     </div>
                 </div>
                 <div class="restaurant-title-btns">
                     <button class="title-btn info-btn btns" onclick="showRestaurantInfo()">
-                        <img src="./img/icons/info.svg" alt="Information">
+                        <img src="./assets/img/icons/info.svg" alt="Information">
                     </button>
                     <button class="title-btn like-btn btns" onclick="toggleLike()">
-                        <img id="like-img" src="./img/icons/favorite_heart_unliked.svg" alt="Favorit">
+                        <img id="like-img" src="./assets/img/icons/favorite_heart_unliked.svg" alt="Favorit">
                     </button>
                 </div>
             </div>
             <div class="menu-banner border-spacing-restaurant-section">
-                <img src="./img/icons/search.svg" alt="Suche">
-                <img src="./img/icons/keyboard_arrow_left.svg" alt="Preil Links" class="keyboard-icon" onclick="scrollToRight()">
+                <img src="./assets/img/icons/search.svg" alt="Suche">
+                <img src="./assets/img/icons/keyboard_arrow_left.svg" alt="Preil Links" class="keyboard-icon" onclick="scrollToRight()">
                 <div id="menu-categories" class="menu-categories">
                     <!-- Menu categories are rendered here -->
                 </div>
-                <img src="./img/icons/keyboard_arrow_right.svg" alt="Pfeil Rechts" class="keyboard-icon" onclick="scrollToLeft()">
+                <img src="./assets/img/icons/keyboard_arrow_right.svg" alt="Pfeil Rechts" class="keyboard-icon" onclick="scrollToLeft()">
             </div>
             <div class="menu-items-header border-spacing-restaurant-section">
                 <h3>Beliebte Gerichte</h3>
@@ -95,7 +95,7 @@
                 <button id="mobile-basket-btn" class="mobile-basket-btn btns" onclick="showMobileBasket()"></button>
             </div>
             <div id="sticky-up-btn-container" class="sticky-up-btn-container d-none">
-                <button class="sticky-up-btn" onclick="scrollToTop()"><img src="./img/icons/keyboard_arrow_up.svg" alt="Pfeil nach Oben"></button>
+                <button class="sticky-up-btn" onclick="scrollToTop()"><img src="./assets/img/icons/keyboard_arrow_up.svg" alt="Pfeil nach Oben"></button>
             </div>
         </div>
         <aside>
@@ -104,7 +104,7 @@
                     <div id="mobile-basket-header" class="mobile-basket-header d-none">
                         <span class="basket-title">Warenkorb</span>
                         <button class="close-btn" onclick="closeMobileBasket()">
-                            <img src="./img/icons/close_black.svg" alt="Schließen">
+                            <img src="./assets/img/icons/close_black.svg" alt="Schließen">
                         </button>
                     </div>
                     <div id="basket-header" class="basket-header">
