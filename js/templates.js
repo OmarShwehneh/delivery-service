@@ -1,3 +1,7 @@
+/**
+ * Generates dynamic HTML code
+ * @returns HTML code
+ */
 function generateLanguageAndCountrySectionHTML() {
     return `
     <div class="pop-up-container-language-country hide-mobile" onclick="closePopUp()">
@@ -88,6 +92,10 @@ function generateLanguageAndCountrySectionHTML() {
     `;
 }
 
+/**
+ * Generates dynamic HTML code
+ * @returns HTML code
+ */
 function generateLoginSectionHTML() {
     return `
     <div class="pop-up-container" onclick="closePopUp()">
@@ -119,6 +127,11 @@ function generateLoginSectionHTML() {
     `;
 }
 
+/**
+ * Generates dynamic HTML code
+ * @param {number} i The index of the current dish
+ * @returns HTML code
+ */
 function generateMenuItemsHTML(i) {
     return `
     <div id="menu-item-${i}" class="menu-items" onclick="openMenuItem(${i})">
@@ -145,6 +158,10 @@ function generateMenuItemsHTML(i) {
 `;
 }
 
+/**
+ * Generates dynamic HTML code
+ * @returns HTML code
+ */
 function generateEmptyBasketHTML() {
     let basket = document.getElementById('basket-container');
     basket.innerHTML += `
@@ -156,6 +173,11 @@ function generateEmptyBasketHTML() {
     `;
 }
 
+/**
+ * Generates dynamic HTML code
+ * @param {number} i The index of the current dish
+ * @returns HTML code
+ */
 function generateBasketItemsHTML(i) {
     return `
     <div class="basket-item-container">
@@ -181,6 +203,11 @@ function generateBasketItemsHTML(i) {
 `;
 }
 
+/**
+ * Generates dynamic HTML code
+ * @param {number} item The index of the current dish
+ * @returns HTML code
+ */
 function generateAnnotationHTML(item) {
     return `
     <div id="annotation-container-${item}" class="annotation-container">
@@ -193,6 +220,11 @@ function generateAnnotationHTML(item) {
     `;
 }
 
+/**
+ * Generates dynamic HTML code
+ * @param {number} item The index of the current dish
+ * @returns HTML code
+ */
 function generateAddAnnotation(item) {
     let container = document.getElementById(`annotation-btn-${item}`);
     container.innerHTML = '';
@@ -201,6 +233,11 @@ function generateAddAnnotation(item) {
 	`;
 }
 
+/**
+ * Generates dynamic HTML code
+ * @param {number} item The index of the current dish
+ * @returns HTML code
+ */
 function generateEditAddAnnotation(item) {
     let container = document.getElementById(`annotation-btn-${item}`);
     container.innerHTML = '';
@@ -209,6 +246,11 @@ function generateEditAddAnnotation(item) {
 	`;
 }
 
+/**
+ * Generates dynamic HTML code
+ * @param {number} item The index of the current dish
+ * @returns HTML code
+ */
 function generateAddAnnotationBtns(item) {
     let container = document.getElementById(`annotation-btns-${item}`);
     container.innerHTML = '';
@@ -217,6 +259,11 @@ function generateAddAnnotationBtns(item) {
 	`;
 }
 
+/**
+ * Generates dynamic HTML code
+ * @param {number} item The index of the current dish
+ * @returns HTML code
+ */
 function generateEditAnnotationBtns(item) {
     let container = document.getElementById(`annotation-btns-${item}`);
     container.innerHTML = '';
@@ -225,6 +272,10 @@ function generateEditAnnotationBtns(item) {
 	`;
 }
 
+/**
+ * Generates dynamic HTML code
+ * @returns HTML code
+ */
 function generateBasketSummaryHTML() {
     return `
     <div class="basket-summary">
@@ -246,6 +297,10 @@ function generateBasketSummaryHTML() {
 `;
 }
 
+/**
+ * Generates dynamic HTML code
+ * @returns HTML code
+ */
 function generateMinOrderValueNotReacheHTML() {
     return `
     <div class="min-order-value-not-reached">
@@ -258,6 +313,10 @@ function generateMinOrderValueNotReacheHTML() {
 `;
 }
 
+/**
+ * Generates dynamic HTML code
+ * @returns HTML code
+ */
 function generateAllergenicHTML() {
     return `
     <div id="allergenic-container" class="pop-up-container" onclick="closePopUp()">
@@ -279,6 +338,10 @@ function generateAllergenicHTML() {
     `;
 }
 
+/**
+ * Generates dynamic HTML code
+ * @returns HTML code
+ */
 function generateRestaurantInfoHTML() {
     return `
     <div id="restaurant-info-container" class="pop-up-container" onclick="closePopUp()">
@@ -368,6 +431,10 @@ function generateRestaurantInfoHTML() {
     `;
 }
 
+/**
+ * Generates dynamic HTML code
+ * @returns HTML code
+ */
 function generateOrderSuccessfulHTML() {
     return `
     <div id="order-successful-container" class="pop-up-container" onclick="closePopUp()">

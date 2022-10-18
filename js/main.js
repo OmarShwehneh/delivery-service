@@ -72,6 +72,9 @@ let basketTotal = 0;
 
 // ####################################### RENDERING #######################################
 
+/**
+ * Initial function - executed when the page is loaded and displays static as well as dynamic content
+ */
 function render() {
     renderMenuCategories();
     renderMenuItems();
@@ -79,6 +82,9 @@ function render() {
     updateMobileBasketBtn();
 }
 
+/**
+ * Renders the menu categories
+ */
 function renderMenuCategories() {
     let container = document.getElementById('menu-categories');
     container.innerHTML = '';
@@ -90,6 +96,9 @@ function renderMenuCategories() {
     }
 }
 
+/**
+ * Renders the menu items
+ */
 function renderMenuItems() {
     let menuItemsContainer = document.getElementById('menu-items-container');
     menuItemsContainer.innerHTML = '';
@@ -102,6 +111,9 @@ function renderMenuItems() {
     document.getElementById('menu-category-0').classList.add('selected-menu-category');
 }
 
+/**
+ * Renders the basket items and updates the basket and the total
+ */
 function renderBasketItems() {
     calcBasketSubTotal();
     calcBasketTotal();
@@ -150,6 +162,10 @@ function renderBasketItems() {
 
 }
 
+/**
+ * Adds an annotation button to the respective dish in the basket
+ * @param {number} item The index of the current dish
+ */
 function renderAnnotationBtn(item) {
     if (menuItemsInBasket[item].annotation === '') {
         generateAddAnnotation(item);
@@ -160,6 +176,10 @@ function renderAnnotationBtn(item) {
 
 // ####################################### MAIN FUNCTIONS #######################################
 
+/**
+ * Highlights the current menu category
+ * @param {number} item The index of the menu category
+ */
 function selectMenuCategory(item) {
     document.getElementById(`menu-category-${item}`).classList.add('selected-menu-category');
 
@@ -171,6 +191,10 @@ function selectMenuCategory(item) {
     }
 }
 
+/**
+ * Opens the current dish and closes all other dishes
+ * @param {number} item The index of the current dish
+ */
 function openMenuItem(item) {
     menuItemIsOpen[item] = !menuItemIsOpen[item];
 
@@ -193,6 +217,11 @@ function openMenuItem(item) {
     calcItemSubtotal(item);
 }
 
+/**
+ * Closes the passed dish
+ * With itemCounter[item] = 1; the default value for adding an item is restored
+ * @param {number} item The index of the current dish
+ */
 function closeMenuItem(item) {
     document.getElementById(`menu-item-basket-section-${item}`).classList.add('d-none');
     document.getElementById(`menu-item-icon-${item}`).src = './assets/img/icons/plus.svg';
@@ -201,6 +230,10 @@ function closeMenuItem(item) {
     document.getElementById(`menu-item-amount-${item}`).innerHTML = itemCounter[item];
 }
 
+/**
+ * Increases the number of the selected dish for adding to the basket
+ * @param {number} item The index of the current dish
+ */
 function itemCounterPlus(item) {
     itemCounter[item]++;
     document.getElementById(`menu-item-amount-${item}`).innerHTML = itemCounter[item];
@@ -212,6 +245,10 @@ function itemCounterPlus(item) {
     calcItemSubtotal(item);
 }
 
+/**
+ * Decreases the number of the selected dish for adding to the basket
+ * @param {number} item The index of the current dish
+ */
 function itemCounterMinus(item) {
     if (itemCounter[item] > 1) {
         itemCounter[item]--;
@@ -225,6 +262,10 @@ function itemCounterMinus(item) {
     calcItemSubtotal(item);
 }
 
+/**
+ * Calculates the subtotal of the respective dish
+ * @param {number} item The index of the current dish
+ */
 function calcItemSubtotal(item) {
     let amount = itemCounter[item];
     let price = menuItems[item].price;
@@ -234,6 +275,10 @@ function calcItemSubtotal(item) {
     document.getElementById(`add-to-basket-btn-${item}`).innerHTML = convertPrice(subTotal) + ' €';
 }
 
+/**
+ * Adds the current dish to the basket, updates the basket and closes all other dishes
+ * @param {number} item The index of the current dish
+ */
 function addToBasket(item) {
     let itemName = menuItems[item].name;
     let itemPrice = menuItems[item].price;
@@ -277,15 +322,26 @@ function addToBasket(item) {
     updateMobileBasketBtn();
 }
 
+/**
+ * Update the HTML
+ */
 function updateMobileBasketBtn() {
     let container = document.getElementById('mobile-basket-btn');
     container.innerHTML = `Warenkorb (${convertPrice(basketTotal)} €)`
 }
 
+/**
+ * Multiplies the number of the dish by the price and returns the sum
+ * @param {number} item 
+ * @returns number = The subtotal of the dish
+ */
 function calcBasketItemSubtotal(item) {
     return menuItemsInBasket[item].amount * menuItemsInBasket[item].price;
 }
 
+/**
+ * Calculates the sum of all dishes in the basket and their subtotal
+ */
 function calcBasketSubTotal() {
     let sum = 0;
 
@@ -296,10 +352,17 @@ function calcBasketSubTotal() {
     basketSubTotal = sum;
 }
 
+/**
+ * Adds the delivery cost to the total amount of the dishes
+ */
 function calcBasketTotal() {
     basketTotal = basketSubTotal + deliveryCosts;
 }
 
+/**
+ * Decreases the number of dish in the basket and updates the basket
+ * @param {number} item The index of the current dish
+ */
 function decreaseItemInBasket(item) {
 
     if (menuItemsInBasket[item].amount >= 1) {
@@ -320,6 +383,10 @@ function decreaseItemInBasket(item) {
     updateMobileBasketBtn();
 }
 
+/**
+ * Increases the number of dish in the basket and updates the basket
+ * @param {number} item The index of the current dish
+ */
 function increaseItemInBasket(item) {
 
     menuItemsInBasket[item].amount++;
@@ -334,15 +401,27 @@ function increaseItemInBasket(item) {
     updateMobileBasketBtn();
 }
 
+/**
+ * Deletes the dish from the basket and updates the items in the basket
+ * @param {number} item The index of the current dish
+ */
 function deleteMenuitemInBasket(item) {
     menuItemsInBasket.splice(item, 1);
     renderBasketItems();
 }
 
+/**
+ * Convert the notation of a floating point number from e.g. 10.7 => 10.70
+ * @param {number} number 
+ * @returns The converted price as number
+ */
 function convertPrice(number) {
     return number.toFixed(2).replace('.', ',');
 }
 
+/**
+ * Go to the checkout, show an order confirmation and empty the basket
+ */
 function checkout() {
     menuItemsInBasket = [];
     showOrderSuccesful();
@@ -350,6 +429,9 @@ function checkout() {
     closeMobileBasket();
 }
 
+/**
+ * Displays the mobile basket
+ */
 function showMobileBasket() {
     document.getElementById('basket-section').classList.remove('hide-mobile');
     document.getElementById('basket-section').classList.add('mobile-basket');
@@ -358,6 +440,9 @@ function showMobileBasket() {
     document.body.style = 'overflow: hidden;'
 }
 
+/**
+ * Closes the mobile basket
+ */
 function closeMobileBasket() {
     document.getElementById('basket-section').classList.add('hide-mobile');
     document.getElementById('basket-section').classList.remove('mobile-basket');
@@ -382,5 +467,4 @@ document.addEventListener('scroll', function() {
         disableUpBtn();
         // console.log('btn enabled = false');
     }
-
 });
