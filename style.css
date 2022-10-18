@@ -415,12 +415,6 @@ main {
     transform: translate(-50%, -50%);
 }
 
-.restaurant-title {
-    font-family: 'Comforter', cursive;
-    font-size: 32px;
-    border-bottom: 1px solid;
-}
-
 .restaurant-logo img {
     width: 160px;
     object-fit: contain;
