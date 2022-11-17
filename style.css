@@ -729,7 +729,7 @@ main {
     border: 1px solid transparent;
     cursor: pointer;
     background-color: white;
-    box-shadow: -1px 1px 5px 1px rgb(163 163 163);
+    box-shadow: 0px 1px 5px 1px rgb(0 0 0 / 15%);
 }
 
 .sticky-up-btn:hover {
