@@ -38,10 +38,6 @@ function generateLanguageAndCountrySectionHTML() {
                         <span class="language-country-text">Frankreich</span>
                     </div>
                     <div class="country">
-                        <img src="./assets/img/icons/countries/israel.svg" alt="Israel"> 
-                        <span class="language-country-text">Israel</span>
-                    </div>
-                    <div class="country">
                         <img src="./assets/img/icons/countries/canada.svg" alt="Kanada"> 
                         <span class="language-country-text">Kanada</span>
                     </div>
@@ -308,7 +304,7 @@ function generateMinOrderValueNotReacheHTML() {
         <span class="min-order-value">${convertPrice(minimumOrderValue - basketSubTotal) + ' €'}</span>
     </div>
     <div class="min-order-value-not-reached-sub-text">
-        Leider kannst du noch nicht bestellen. Japanisches Restaurant liefert erst ab einem Mindestbestellwert von ${convertPrice(minimumOrderValue) + ' €'} (exkl. Lieferkosten).
+        Leider kannst du noch nicht bestellen. Syriana Imbiss liefert erst ab einem Mindestbestellwert von ${convertPrice(minimumOrderValue) + ' €'} (exkl. Lieferkosten).
     </div>
 `;
 }
@@ -353,42 +349,42 @@ function generateRestaurantInfoHTML() {
                 </button>
             </div>
             <div class="restaurant-info-body">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1298.492968466941!2d14.286479291670172!3d48.305697215691204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47739719dfa50243%3A0xeecd03e396b6c102!2sHauptplatz!5e0!3m2!1sde!2sat!4v1644690648793!5m2!1sde!2sat"
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10665.378526552397!2d8.5367658!3d48.0649904!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479097e74f81d5b3%3A0xdf30d7376c662a99!2sSyriana%20Imbiss!5e0!3m2!1sde!2sde!4v1676731432015!5m2!1sde!2sde"
                     class="google-maps">
             </iframe>
                 <div class="restaurant-info-heading">
-                    <img src="./assets/img/icons/time_left.svg" alt="Lieferzeiten">
-                    <h3>Lieferzeiten</h3>
+                    <img src="./assets/img/icons/time_left.svg" alt="Öffnungszeiten">
+                    <h3>Öffnungszeiten</h3>
                 </div>
                 <div class="restaurant-info-content">
                     <table>
                         <tr>
                             <td>Montag</td>
-                            <td>11:00 - 22:15</td>
+                            <td>11:00 - 21:00</td>
                         </tr>
                         <tr>
                             <td>Dienstag</td>
-                            <td>11:00 - 22:15</td>
+                            <td>11:00 - 21:00</td>
                         </tr>
                         <tr>
                             <td>Mittwoch</td>
-                            <td>11:00 - 22:15</td>
+                            <td>11:00 - 21:00</td>
                         </tr>
                         <tr>
                             <td>Donnerstag</td>
-                            <td>11:00 - 22:15</td>
+                            <td>11:00 - 21:00</td>
                         </tr>
                         <tr>
                             <td>Freitag</td>
-                            <td>11:00 - 22:15</td>
+                            <td>11:00 - 21:00</td>
                         </tr>
                         <tr>
                             <td>Samstag</td>
-                            <td>11:00 - 22:15</td>
+                            <td>11:00 - 21:30</td>
                         </tr>
                         <tr>
                             <td>Sonntag</td>
-                            <td>11:00 - 22:15</td>
+                            <td>12:00 - 21:00</td>
                         </tr>
                     </table>
                 </div>
@@ -400,7 +396,7 @@ function generateRestaurantInfoHTML() {
                     <table>
                         <tr>
                             <td>Mindestbestellwert</td>
-                            <td>15,00 €</td>
+                            <td>25,00 €</td>
                         </tr>
                         <tr>
                             <td>Lieferkosten</td>
@@ -423,7 +419,7 @@ function generateRestaurantInfoHTML() {
                     <h3>Impressum</h3>
                 </div>
                 <div class="restaurant-info-content bottom-spacing">
-                    Japanisches Restaurant<br> Straße Hausnummer<br> Postleitzahl Ort<br> Land
+                    Syriana Imbiss<br> Markstraße 19<br> 78054 Villingen-Schwenningen<br>
                 </div>
             </div>
         </div>

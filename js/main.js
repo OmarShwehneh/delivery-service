@@ -1,61 +1,92 @@
 let menuItems = [
 
     {
-        'name': 'HIT! Sesam Chicken',
+        'name': 'HIT! Döner',
         'description': 'frittierte Hühnerbrust mit Sesamkörnern, Salat, Reis und Teriyaki-Sauce',
-        'price': 12.90,
+        'price': 5.00,
         'allergenic': ['Enthält glutenhaltige/s Getreide/-Erzeugnisse', 'Enthält Ei/-Erzeugnisse', 'Enthält Sojabohnen/-Erzeugnisse', 'Enthält Sesamsamen/-Erzeugnisse', 'Enthält Schwefeldioxid/Sulfite']
     },
 
     {
-        'name': 'HIT! Lachs Teriyaki',
+        'name': 'HIT! Yufka Döner',
         'description': 'leicht frittiertes Lachsfilets mit Teriyaki-Sauce, Gemüse, Sojasprossen und Reis',
-        'price': 13.50,
+        'price': 6.50,
         'allergenic': ['Enthält glutenhaltige/s Getreide/-Erzeugnisse', 'Enthält Fisch/-Erzeugnisse', 'Enthält Sojabohnen/-Erzeugnisse', 'Enthält Milch/-Erzeugnisse (laktosehaltig)', 'Enthält Schwefeldioxid/Sulfite']
     },
 
     {
-        'name': 'HIT! Harumaki (6 Stück, vegan)',
+        'name': 'HIT! Flalafel (6 Stück, vegan)',
         'description': 'japanische Frühlingsrollen gefüllt mit Gemüse und Kyosasauce',
-        'price': 4.70,
+        'price': 6.50,
         'allergenic': ['Enthält glutenhaltige/s Getreide/-Erzeugnisse', 'Enthält Sojabohnen/-Erzeugnisse', 'Enthält Sesamsamen/-Erzeugnisse', 'Enthält Schwefeldioxid/Sulfite']
     },
 
     {
-        'name': 'HIT! Kimchi (scharf)',
+        'name': 'HIT! Pizza Kebap ',
         'description': 'scharfer fermentierter Chinakohl mit Ingwer und reichtlich Knoblauchin scharfem Paprikapulver. Mit probiotischen Kulturen.',
-        'price': 4.20,
+        'price': 7.00,
         'allergenic': ['Enthält glutenhaltige/s Getreide/-Erzeugnisse', 'Enthält Fisch/-Erzeugnisse', 'Enthält Sesamsamen/-Erzeugnisse', 'Enthält Schwefeldioxid/Sulfite']
     },
 
     {
-        'name': 'Sweet Sour Soup, 340ml (pikant)',
+        'name': 'HIT! Pide Kusbasi',
         'description': 'mit Hühnerbrust, Morcheln, roter Paprika und Eistreifen',
-        'price': 4.10,
+        'price': 5.00,
         'allergenic': ['Enthält Sojabohnen/-Erzeugnisse']
     },
 
     {
-        'name': 'Shrimp Dim Sum (4 Stück)',
+        'name': 'HIT! Gemischter Salat',
+        'description': 'mit Hühnerbrust, Morcheln, roter Paprika und Eistreifen',
+        'price': 5.00,
+        'allergenic': ['Enthält Sojabohnen/-Erzeugnisse']
+    },
+    
+    {
+        'name': 'HIT! Lahmacun',
         'description': 'Teigtaschen gefüllt mit Garnelen, Wasserkastanien, Bärlauch, Bambussprossen und Karotten dazu Süß-Saurer-Chilisauce',
-        'price': 5.50,
+        'price': 4.50,
+        'allergenic': ['Enthält glutenhaltige/s Getreide/-Erzeugnisse', 'Enthält Krebstiere/-Erzeugnisse', 'Enthält Ei/-Erzeugnisse', 'Enthält Sojabohnen/-Erzeugnisse', 'Enthält Milch/-Erzeugnisse (laktosehaltig)', 'Enthält Senf/-Erzeugnisse', 'Enthält Sesamsamen/-Erzeugnisse', 'Enthält Schwefeldioxid/Sulfite']
+    }
+];
+let OptionItems = [
+
+    {
+        'name': 'HIT! Döner',
+        'description': 'frittierte Hühnerbrust mit Sesamkörnern, Salat, Reis und Teriyaki-Sauce',
+        'price': 5.00,
+        'allergenic': ['Enthält glutenhaltige/s Getreide/-Erzeugnisse', 'Enthält Ei/-Erzeugnisse', 'Enthält Sojabohnen/-Erzeugnisse', 'Enthält Sesamsamen/-Erzeugnisse', 'Enthält Schwefeldioxid/Sulfite']
+    },
+
+    {
+        'name': 'HIT! Yufka Döner',
+        'description': 'leicht frittiertes Lachsfilets mit Teriyaki-Sauce, Gemüse, Sojasprossen und Reis',
+        'price': 6.50,
+        'allergenic': ['Enthält glutenhaltige/s Getreide/-Erzeugnisse', 'Enthält Fisch/-Erzeugnisse', 'Enthält Sojabohnen/-Erzeugnisse', 'Enthält Milch/-Erzeugnisse (laktosehaltig)', 'Enthält Schwefeldioxid/Sulfite']
+    },
+
+    {
+        'name': 'HIT! Flalafel (6 Stück, vegan)',
+        'description': 'japanische Frühlingsrollen gefüllt mit Gemüse und Kyosasauce',
+        'price': 6.50,
+        'allergenic': ['Enthält glutenhaltige/s Getreide/-Erzeugnisse', 'Enthält Sojabohnen/-Erzeugnisse', 'Enthält Sesamsamen/-Erzeugnisse', 'Enthält Schwefeldioxid/Sulfite']
+    },
+    
+    {
+        'name': 'HIT! Lahmacun',
+        'description': 'Teigtaschen gefüllt mit Garnelen, Wasserkastanien, Bärlauch, Bambussprossen und Karotten dazu Süß-Saurer-Chilisauce',
+        'price': 4.50,
         'allergenic': ['Enthält glutenhaltige/s Getreide/-Erzeugnisse', 'Enthält Krebstiere/-Erzeugnisse', 'Enthält Ei/-Erzeugnisse', 'Enthält Sojabohnen/-Erzeugnisse', 'Enthält Milch/-Erzeugnisse (laktosehaltig)', 'Enthält Senf/-Erzeugnisse', 'Enthält Sesamsamen/-Erzeugnisse', 'Enthält Schwefeldioxid/Sulfite']
     }
 ];
 let menuCategories = [
     'Beliebte Gerichte',
-    'Suppen',
+    'Drehspieß - Fleischgerichte',
+    'Vegetarische Gerichte',
     'Salate',
-    'Vorspeisen',
-    'Sushi und Maki Set\'s',
-    'Sushi-Sashimi Set\'s',
-    'Sushi einzeln',
-    'Kleine Maki Rollen',
-    'Große Maki Rollen',
-    'Bento Boxen',
-    'Desserts',
+    'Pide | Calzone | Lahmacun',
+    'Pizza',
     'Alkoholfreie Getränke',
-    'Alkoholische Getränke'
 ]
 let menuItemsInBasket = [];
 let menuItemIsOpen = [];
@@ -63,7 +94,7 @@ let itemCounter = [];
 let itemSubtotal = [];
 let itemsInBasket = [];
 let deliveryCosts = 0;
-let minimumOrderValue = 15;
+let minimumOrderValue = 25;
 let languageAndCountrySelectionIsOpen = false;
 let loginSectionIsOpen = false;
 let liked = false;
@@ -110,7 +141,17 @@ function renderMenuItems() {
     // Select the first category as default = favorite meals
     document.getElementById('menu-category-0').classList.add('selected-menu-category');
 }
+function renderOptionItems() {
+    let menuItemsContainer = document.getElementById('menu-items-container');
+    menuItemsContainer.innerHTML = '';
 
+    for (let i = 0; i < OptionItems.length; i++) {
+        menuItemsContainer.innerHTML += generateMenuItemsHTML(i);
+    }
+
+    // Select the first category as default = favorite meals
+    document.getElementById('menu-category-0').classList.add('selected-menu-category');
+}
 /**
  * Renders the basket items and updates the basket and the total
  */
