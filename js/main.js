@@ -1,9 +1,11 @@
 let menuItems = [
-
+            /*First Category  */
     {
         'name': 'HIT! Döner',
         'description': 'frittierte Hühnerbrust mit Sesamkörnern, Salat, Reis und Teriyaki-Sauce',
         'price': 5.00,
+        'category': 1,
+        'favorite': 1,
         'allergenic': ['Enthält glutenhaltige/s Getreide/-Erzeugnisse', 'Enthält Ei/-Erzeugnisse', 'Enthält Sojabohnen/-Erzeugnisse', 'Enthält Sesamsamen/-Erzeugnisse', 'Enthält Schwefeldioxid/Sulfite']
     },
 
@@ -11,75 +13,77 @@ let menuItems = [
         'name': 'HIT! Yufka Döner',
         'description': 'leicht frittiertes Lachsfilets mit Teriyaki-Sauce, Gemüse, Sojasprossen und Reis',
         'price': 6.50,
+        'category': 1,
+        'favorite': 1,
         'allergenic': ['Enthält glutenhaltige/s Getreide/-Erzeugnisse', 'Enthält Fisch/-Erzeugnisse', 'Enthält Sojabohnen/-Erzeugnisse', 'Enthält Milch/-Erzeugnisse (laktosehaltig)', 'Enthält Schwefeldioxid/Sulfite']
     },
 
     {
+        'name': 'Döner-Teller',
+        'description': 'Teigtaschen gefüllt mit Garnelen, Wasserkastanien, Bärlauch, Bambussprossen und Karotten dazu Süß-Saurer-Chilisauce',
+        'price': 4.50,
+        'category': 1,
+        'favorite': 0,
+        'allergenic': ['Enthält glutenhaltige/s Getreide/-Erzeugnisse', 'Enthält Krebstiere/-Erzeugnisse', 'Enthält Ei/-Erzeugnisse', 'Enthält Sojabohnen/-Erzeugnisse', 'Enthält Milch/-Erzeugnisse (laktosehaltig)', 'Enthält Senf/-Erzeugnisse', 'Enthält Sesamsamen/-Erzeugnisse', 'Enthält Schwefeldioxid/Sulfite']
+    },
+            /*Second Category  */
+    {
         'name': 'HIT! Flalafel (6 Stück, vegan)',
         'description': 'japanische Frühlingsrollen gefüllt mit Gemüse und Kyosasauce',
         'price': 6.50,
+        'category': 2,
+        'favorite': 1,
         'allergenic': ['Enthält glutenhaltige/s Getreide/-Erzeugnisse', 'Enthält Sojabohnen/-Erzeugnisse', 'Enthält Sesamsamen/-Erzeugnisse', 'Enthält Schwefeldioxid/Sulfite']
     },
+            /*Third Category  */
+    {
+        'name': 'HIT! Gemischter Salat',
+        'description': 'mit Hühnerbrust, Morcheln, roter Paprika und Eistreifen',
+        'price': 5.00,
+        'category': 3,
+        'favorite': 1,
+        'allergenic': ['Enthält Sojabohnen/-Erzeugnisse']
+    },
+            /*Forth Category  */
+    {
+        'name': 'HIT! Pide Kusbasi',
+        'description': 'mit Hühnerbrust, Morcheln, roter Paprika und Eistreifen',
+        'price': 5.00,
+        'category': 4,
+        'favorite': 1,
+        'allergenic': ['Enthält Sojabohnen/-Erzeugnisse']
+    },
+    
+    {
+        'name': 'HIT! Lahmacun',
+        'description': 'Teigtaschen gefüllt mit Garnelen, Wasserkastanien, Bärlauch, Bambussprossen und Karotten dazu Süß-Saurer-Chilisauce',
+        'price': 4.50,
+        'category': 4,
+        'favorite': 1,
+        'allergenic': ['Enthält glutenhaltige/s Getreide/-Erzeugnisse', 'Enthält Krebstiere/-Erzeugnisse', 'Enthält Ei/-Erzeugnisse', 'Enthält Sojabohnen/-Erzeugnisse', 'Enthält Milch/-Erzeugnisse (laktosehaltig)', 'Enthält Senf/-Erzeugnisse', 'Enthält Sesamsamen/-Erzeugnisse', 'Enthält Schwefeldioxid/Sulfite']
+    },
+            /*Fifth Category  */
 
     {
         'name': 'HIT! Pizza Kebap ',
         'description': 'scharfer fermentierter Chinakohl mit Ingwer und reichtlich Knoblauchin scharfem Paprikapulver. Mit probiotischen Kulturen.',
         'price': 7.00,
+        'category': 5,
+        'favorite': 0,
         'allergenic': ['Enthält glutenhaltige/s Getreide/-Erzeugnisse', 'Enthält Fisch/-Erzeugnisse', 'Enthält Sesamsamen/-Erzeugnisse', 'Enthält Schwefeldioxid/Sulfite']
     },
-
+            /*Sixth Category  */
     {
-        'name': 'HIT! Pide Kusbasi',
-        'description': 'mit Hühnerbrust, Morcheln, roter Paprika und Eistreifen',
-        'price': 5.00,
-        'allergenic': ['Enthält Sojabohnen/-Erzeugnisse']
-    },
-
-    {
-        'name': 'HIT! Gemischter Salat',
-        'description': 'mit Hühnerbrust, Morcheln, roter Paprika und Eistreifen',
-        'price': 5.00,
-        'allergenic': ['Enthält Sojabohnen/-Erzeugnisse']
-    },
-    
-    {
-        'name': 'HIT! Lahmacun',
+        'name': 'kaltes Getränk (Cola, Fanta oder MezoMix)',
         'description': 'Teigtaschen gefüllt mit Garnelen, Wasserkastanien, Bärlauch, Bambussprossen und Karotten dazu Süß-Saurer-Chilisauce',
-        'price': 4.50,
+        'price': 2,
+        'category': 6,
+        'favorite': 0,
         'allergenic': ['Enthält glutenhaltige/s Getreide/-Erzeugnisse', 'Enthält Krebstiere/-Erzeugnisse', 'Enthält Ei/-Erzeugnisse', 'Enthält Sojabohnen/-Erzeugnisse', 'Enthält Milch/-Erzeugnisse (laktosehaltig)', 'Enthält Senf/-Erzeugnisse', 'Enthält Sesamsamen/-Erzeugnisse', 'Enthält Schwefeldioxid/Sulfite']
-    }
-];
-let OptionItems = [
-
-    {
-        'name': 'HIT! Döner',
-        'description': 'frittierte Hühnerbrust mit Sesamkörnern, Salat, Reis und Teriyaki-Sauce',
-        'price': 5.00,
-        'allergenic': ['Enthält glutenhaltige/s Getreide/-Erzeugnisse', 'Enthält Ei/-Erzeugnisse', 'Enthält Sojabohnen/-Erzeugnisse', 'Enthält Sesamsamen/-Erzeugnisse', 'Enthält Schwefeldioxid/Sulfite']
     },
-
-    {
-        'name': 'HIT! Yufka Döner',
-        'description': 'leicht frittiertes Lachsfilets mit Teriyaki-Sauce, Gemüse, Sojasprossen und Reis',
-        'price': 6.50,
-        'allergenic': ['Enthält glutenhaltige/s Getreide/-Erzeugnisse', 'Enthält Fisch/-Erzeugnisse', 'Enthält Sojabohnen/-Erzeugnisse', 'Enthält Milch/-Erzeugnisse (laktosehaltig)', 'Enthält Schwefeldioxid/Sulfite']
-    },
-
-    {
-        'name': 'HIT! Flalafel (6 Stück, vegan)',
-        'description': 'japanische Frühlingsrollen gefüllt mit Gemüse und Kyosasauce',
-        'price': 6.50,
-        'allergenic': ['Enthält glutenhaltige/s Getreide/-Erzeugnisse', 'Enthält Sojabohnen/-Erzeugnisse', 'Enthält Sesamsamen/-Erzeugnisse', 'Enthält Schwefeldioxid/Sulfite']
-    },
-    
-    {
-        'name': 'HIT! Lahmacun',
-        'description': 'Teigtaschen gefüllt mit Garnelen, Wasserkastanien, Bärlauch, Bambussprossen und Karotten dazu Süß-Saurer-Chilisauce',
-        'price': 4.50,
-        'allergenic': ['Enthält glutenhaltige/s Getreide/-Erzeugnisse', 'Enthält Krebstiere/-Erzeugnisse', 'Enthält Ei/-Erzeugnisse', 'Enthält Sojabohnen/-Erzeugnisse', 'Enthält Milch/-Erzeugnisse (laktosehaltig)', 'Enthält Senf/-Erzeugnisse', 'Enthält Sesamsamen/-Erzeugnisse', 'Enthält Schwefeldioxid/Sulfite']
-    }
 ];
 let menuCategories = [
+    'All',
     'Beliebte Gerichte',
     'Drehspieß - Fleischgerichte',
     'Vegetarische Gerichte',
@@ -125,6 +129,9 @@ function renderMenuCategories() {
             <span id="menu-category-${i}" class="menu-category" onclick="selectMenuCategory(${i})">${menuCategories[i]}</span>
         `;
     }
+
+    // Select the first category as default = favorite meals
+    document.getElementById('menu-category-1').classList.add('selected-menu-category');
 }
 
 /**
@@ -135,22 +142,14 @@ function renderMenuItems() {
     menuItemsContainer.innerHTML = '';
 
     for (let i = 0; i < menuItems.length; i++) {
-        menuItemsContainer.innerHTML += generateMenuItemsHTML(i);
-    }
+        let itemFavorite = menuItems[i].favorite;
+        if (itemFavorite == 1)
+        {
+            menuItemsContainer.innerHTML += generateMenuItemsHTML(i);
 
-    // Select the first category as default = favorite meals
-    document.getElementById('menu-category-0').classList.add('selected-menu-category');
-}
-function renderOptionItems() {
-    let menuItemsContainer = document.getElementById('menu-items-container');
-    menuItemsContainer.innerHTML = '';
+        }    }
 
-    for (let i = 0; i < OptionItems.length; i++) {
-        menuItemsContainer.innerHTML += generateMenuItemsHTML(i);
-    }
 
-    // Select the first category as default = favorite meals
-    document.getElementById('menu-category-0').classList.add('selected-menu-category');
 }
 /**
  * Renders the basket items and updates the basket and the total
@@ -230,8 +229,100 @@ function selectMenuCategory(item) {
             document.getElementById(`menu-category-${i}`).classList.remove('selected-menu-category');
         }
     }
-}
 
+    // Relist related menu items for chosen menu category
+    let menuItemsContainer = document.getElementById('menu-items-container');
+    menuItemsContainer.innerHTML = '';
+    if (item == 0)
+    {
+        for (let i = 0; i < menuItems.length; i++) {
+            menuItemsContainer.innerHTML += generateMenuItemsHTML(i);
+        }
+    }
+
+    if (item == 1)
+    {
+        for (let i = 0; i < menuItems.length; i++) {
+            let itemFavorite = menuItems[i].favorite;
+            if (itemFavorite == 1)
+            {
+                menuItemsContainer.innerHTML += generateMenuItemsHTML(i);
+
+            }
+        }
+    }
+    if (item == 2)
+    {
+        for (let i = 0; i < menuItems.length; i++) {
+            let itemCategory = menuItems[i].category;
+            if (itemCategory == 1)
+            {
+                menuItemsContainer.innerHTML += generateMenuItemsHTML(i);
+
+            }
+        }
+    }
+
+    if (item == 3)
+    {
+        for (let i = 0; i < menuItems.length; i++) {
+            let itemCategory = menuItems[i].category;
+            if (itemCategory == 2)
+            {
+                menuItemsContainer.innerHTML += generateMenuItemsHTML(i);
+
+            }
+        }
+    }
+
+    if (item == 4)
+    {
+        for (let i = 0; i < menuItems.length; i++) {
+            let itemCategory = menuItems[i].category;
+            if (itemCategory == 3)
+            {
+                menuItemsContainer.innerHTML += generateMenuItemsHTML(i);
+
+            }
+        }
+    }
+
+    if (item == 5)
+    {
+        for (let i = 0; i < menuItems.length; i++) {
+            let itemCategory = menuItems[i].category;
+            if (itemCategory == 4)
+            {
+                menuItemsContainer.innerHTML += generateMenuItemsHTML(i);
+
+            }
+        }
+    }
+
+    if (item == 6)
+    {
+        for (let i = 0; i < menuItems.length; i++) {
+            let itemCategory = menuItems[i].category;
+            if (itemCategory == 5)
+            {
+                menuItemsContainer.innerHTML += generateMenuItemsHTML(i);
+
+            }
+        }
+    }
+
+    if (item == 7)
+    {
+        for (let i = 0; i < menuItems.length; i++) {
+            let itemCategory = menuItems[i].category;
+            if (itemCategory == 6)
+            {
+                menuItemsContainer.innerHTML += generateMenuItemsHTML(i);
+
+            }
+        }
+    }
+}
 /**
  * Opens the current dish and closes all other dishes
  * @param {number} item The index of the current dish

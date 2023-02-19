@@ -144,8 +144,8 @@ function generateMenuItemsHTML(i) {
         </div>
         <div id="menu-item-basket-section-${i}" class="d-none menu-item-basket-section menu-items-border-spacing" onclick="event.stopPropagation()">
             <div class="menu-item-add-to-basket-counter">
-                <button id="minus-btn-${i}" class="minus-btn btns" onclick="itemCounterMinus(${i})"><img src="./assets/img/icons/minus.svg" alt="Minus" id="minus-btn-img-${i}" class="menu-item-icon-img"></button>
-                <div id="menu-item-amount-${i}" class="menu-item-amount">${itemCounter[i] = 1}</div>
+            <button id="minus-btn-${i}" class="minus-btn btns" onclick="itemCounterMinus(${i})"><img src="./assets/img/icons/minus.svg" alt="Minus" id="minus-btn-img-${i}" class="menu-item-icon-img"></button>
+            <div id="menu-item-amount-${i}" class="menu-item-amount">${itemCounter[i] = 1}</div>
                 <button class="plus-btn btns" onclick="itemCounterPlus(${i})"><img src="./assets/img/icons/plus.svg" alt="Plus" class="menu-item-icon-img"></button>
             </div>
             <button id="add-to-basket-btn-${i}" class="add-to-basket-btn btns" onclick="addToBasket(${i})"></button>
